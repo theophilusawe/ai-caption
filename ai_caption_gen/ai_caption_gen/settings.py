@@ -121,9 +121,10 @@ TEMPLATES[0]['DIRS'] = [os.path.join(BASE_DIR, 'caption_app', 'templates')]
 
 STATIC_URL = '/static/'
 STATICFILES_DIR = [os.path.join(BASE_DIR, 'caption_app', 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Define this and then run python manage.pt collectstatic
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.joint(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 

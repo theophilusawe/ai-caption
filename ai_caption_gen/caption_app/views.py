@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-def upload_view():
+def upload_view(request):
     return render(request, 'upload.html')
