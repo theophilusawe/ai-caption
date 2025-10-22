@@ -24,7 +24,7 @@ def generate_caption(image_path: str) -> str:
     return caption
 
 if __name__ == '__main__':
-    test_image_path = "test_images\\airplane.jpeg" 
+    test_image_path = "test_images\\boytopool.jpeg" 
     
     print(f"Generating caption for {test_image_path}")
     
