@@ -16,7 +16,7 @@ def upload_view(request):
         saved_path = default_storage.save(f'uploads/{image_file.name}', ContentFile(image_file.read()))
         user_image_url = default_storage.url(saved_path)
         # Model inference
-        try: 
+        try:
             caption = generate_caption(user_image_url)
             context = {
             'file_url': user_image_url,
